@@ -440,6 +440,13 @@ header h1 {
   background: #D1E2FF;
 }
 
+.main-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D1E2FF;
+}
+
 .Des-P {
   display: flex;
   justify-content: center;
