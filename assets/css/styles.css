@@ -34,10 +34,6 @@ button,
 }
 
 fieldset,
-img {
-  border: 0 none;
-}
-
 dl,
 ul,
 ol,
@@ -324,7 +320,7 @@ header h1 {
 }
 
 .video-container video {
-  max-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100vh;
@@ -421,13 +417,13 @@ header h1 {
      object-fit: cover;
 }
 
-.main-page {
+.inner .main-page {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.inner .main-page img {
   padding-top: 50px;
   padding-bottom: 90px;
-  box-sizing: border-box;
 }
 
 .main-page2 {
@@ -441,18 +437,22 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #D1E2FF;
 }
 
-.Description-Page {
+.Des-P {
   display: flex;
-  max-width: 100%;
   justify-content: center;
-  padding-bottom: 90px;
+  align-items: center;
+  background: #0092FF;
 }
 
-.company-page {
+#footer {
+  width: 1440px;
+  align-items: center;
+}
+#footer .inner {
   display: flex;
-  justify-content: center;
 }
 
 .slide-intro {
