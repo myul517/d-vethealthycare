@@ -1,0 +1,173 @@
+/* 사이트 전체 공통 클래스 */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    justify-content: space-between;
+    height: 110px;
+    padding: 0 45px;
+    transition: all 0.3s;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    width: 114px;
+    height: 31px;
+}
+#gnb {
+    display: flex;
+    align-items: center;
+}
+
+#gnb > .depth1 {
+    display: flex;
+}
+
+#gnb > .depth1 > li {
+    position: relative;
+}
+
+#gnb > .depth1 > li > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 36px;
+    color: #fff;
+    font-size: 18px;
+}
+.overlay-text strong {
+    display: block;
+    margin: 15px 0 10px;
+    line-height: 1.2;
+}
+.overlay-text em {
+    display: block;
+    padding-bottom: 16px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #0092FF;
+    font-size: 22px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    text-align: center;
+}
+.overlay-text p {
+    display: inline-block;
+    padding-top: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+    color: white;
+    font-size: 22px;
+}
+.text-warp {
+    padding-top: 189px;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    line-height: 1.2;
+}
+.text-warp strong {
+    display: block;
+}
+.text-tit1 {
+    color: #666;
+}
+.text-warp span {
+    padding-bottom: 147px;
+    font-size: 24px;
+    color: #0092FF;
+}
+
+.sec-slider{
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 147px;
+    overflow: hidden;
+    position: relative;
+}
+.slider-row{
+    display: flex;
+}
+.slider {
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 140px;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.slider img {
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-66.67%);
+        /* 이미지 개수 / (이미지 개수 + 2) */
+    }
+}
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+}
+
+.main-page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.main-page3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Description-Page {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.company-page {
+    display: flex;
+    justify-content: center;
+}
